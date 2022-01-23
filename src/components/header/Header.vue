@@ -1,19 +1,19 @@
 <template id="container">
   <div class="header">
     <img src="../../assets/nicoblouzlogo.png" alt="logo" />
-    <DatePicker></DatePicker>
+    <p>ma candidature chez Motoblouz</p>
+    <div>
+      <Icons icon-name="write"><icon-write /></Icons>
+    </div>
   </div>
 </template>
 
 <script>
-import DatePicker from "./DatePicker.vue";
-
+import Icons from "../icons/IconBase.vue";
 export default {
-  name: "Header",
   components: {
-    DatePicker,
+    Icons,
   },
-  props: {},
 };
 </script>
 
@@ -25,9 +25,13 @@ export default {
   justify-content: space-between;
   align-content: center;
   background: black;
-  height: 20vh;
   color: whitesmoke;
   font-family: "Lato", sans-serif;
+}
+p {
+  font-size: 5vh;
+  font-style: italic;
+  color: rgb(187, 187, 187);
 }
 
 img {
