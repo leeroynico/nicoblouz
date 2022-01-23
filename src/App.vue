@@ -2,6 +2,13 @@
   <div class="container">
     <Header />
     <Profil />
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+      quaerat. Illo sapiente debitis ipsam ab voluptates, nobis, perferendis
+      aspernatur similique eum voluptatum velit, consequatur eius maiores facere
+      tempore inventore quas!
+    </p>
   </div>
 </template>
 

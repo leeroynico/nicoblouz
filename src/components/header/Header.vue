@@ -2,9 +2,8 @@
   <div class="header">
     <img src="../../assets/nicoblouzlogo.png" alt="logo" />
     <p>ma candidature chez Motoblouz</p>
-    <div>
-      <Icons />
-    </div>
+
+    <Icons name="motorcycle" />
   </div>
 </template>
 
@@ -17,7 +16,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap");
 
 .header {

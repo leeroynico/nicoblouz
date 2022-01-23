@@ -1,8 +1,18 @@
 <template>
-  <fa icon="motorcycle" class="icon" size="6x" />
+  <fa :icon="name" class="icon" size="6x" />
+  <p>{{ name }}</p>
 </template>
 
-<script></script>
+<script setup>
+import { defineProps } from "vue";
+
+defineProps({
+  name: {
+    type: String,
+    default: "motorcycle",
+  },
+});
+</script>
 
 <style>
 .icon {
