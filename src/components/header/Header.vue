@@ -1,9 +1,9 @@
-<template id="container">
+<template>
   <div class="header">
     <img src="../../assets/nicoblouzlogo.png" alt="logo" />
     <p>ma candidature chez Motoblouz</p>
     <div>
-      <Icons icon-name="write"><icon-write /></Icons>
+      <Icons />
     </div>
   </div>
 </template>
@@ -17,14 +17,14 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap");
 
 .header {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  background: black;
+  background: rgb(0, 0, 0);
   color: whitesmoke;
   font-family: "Lato", sans-serif;
 }
