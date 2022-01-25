@@ -1,18 +1,45 @@
 <template>
   <h2>Ma selection de compétences</h2>
   <h3>Le meilleur de mes compétences</h3>
-  <ol>
-    <li v-for="competence in competences" :key="competence">
-      {{ competence.name }}
-    </li>
-  </ol>
+  <div class="competence">
+    <div v-for="item in competences" :key="item.id">
+      <Competence
+        :name="item.name"
+        :img="item.img"
+        :stars="item.stars"
+        :halfStars="item.halfStars"
+        :bannier="item.bannier"
+      />
+    </div>
+  </div>
 </template>
 
 <script setup>
+import Competence from "./Competence.vue";
+
 const competences = [
-  { name: " JavaScript" },
-  { name: " Vue" },
-  { name: " php" },
+  {
+    id: 1,
+    name: " react",
+    img: "../../assets/react.png",
+    stars: 5,
+    halfStars: false,
+  },
+  {
+    id: 1,
+    name: " react",
+    img: "../../assets/react.png",
+    stars: 4,
+    halfStars: false,
+    bannier: "NOUVEAUTE",
+  },
+  {
+    id: 2,
+    name: " vue",
+    img: "../../assets/react.png",
+    stars: 2,
+    halfStars: true,
+  },
 ];
 </script>
 
@@ -22,6 +49,7 @@ h2 {
   font-size: 3rem;
   margin-top: 5px;
   margin-bottom: 5px;
+  text-align: center;
 }
 h3 {
   font-family: "Lato", sans-serif;
@@ -29,5 +57,11 @@ h3 {
   margin-top: 1px;
   color: grey;
   text-transform: uppercase;
+  text-align: center;
+}
+.competence {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
 }
 </style>
