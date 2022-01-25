@@ -3,12 +3,14 @@
     <Header />
     <Profil />
     <Competence />
+    <Contact />
   </div>
 </template>
 
 <script>
 import Header from "./components/header/Header.vue";
 import Profil from "./components/Profil.vue";
+import Contact from "./components/Contact.vue";
 import Competence from "./components/competences/Competences.vue";
 export default {
   name: "App",
@@ -16,6 +18,7 @@ export default {
     Header,
     Profil,
     Competence,
+    Contact,
   },
 };
 </script>
