@@ -2,7 +2,6 @@
   <div class="header">
     <img src="../../assets/nicoblouzlogo.png" alt="logo" />
     <p>ma candidature chez Motoblouz</p>
-
     <Icons name="motorcycle" />
   </div>
 </template>
@@ -27,6 +26,7 @@ export default {
   color: whitesmoke;
   font-family: "Lato", sans-serif;
 }
+
 p {
   font-size: 5vh;
   font-style: italic;

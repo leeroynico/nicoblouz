@@ -2,14 +2,35 @@
   <div class="container">
     <!-- <img src="../assets/profil.jpg" alt="profil" /> -->
     <div class="card">
-      <h1>mon profil</h1>
+      <h1>Mon profil</h1>
       <p>
         Je suis un développeur Front-End, ayant beaucoup d'appétence pour le
         Javascript (notamment React). Ayant vu votre annonce et vu Vue.js, j'ai
-        donc réalisé ce mini projet afin de vous montrer mon envie et mon désir
-        de monter en compétence sur cette technologie.
+        donc réalisé ce mini projet en Vue.js afin de vous montrer mon envie et
+        mon désir de monter en compétence sur cette technologie.
       </p>
-      <h1>mes réseaux sociaux</h1>
+
+      <h1>Mes réseaux sociaux</h1>
+      <div class="social">
+        <div class="socialItem">
+          <label>linkedin</label>
+          <a href="https://www.linkedin.com/in/nico-leeroy/" target="blank">
+            <fa :icon="['fab', 'linkedin']" size="6x"
+          /></a>
+        </div>
+        <div class="socialItem">
+          <label>github</label>
+          <a href="https://github.com/leeroynico/" target="blank">
+            <fa :icon="['fab', 'github']" size="6x"
+          /></a>
+        </div>
+        <div class="socialItem">
+          <label>portfolio react</label>
+          <a href="https://portfolionicoleroy.netlify.app" target="blank">
+            <fa :icon="['fa', 'address-card']" size="6x" />
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -19,11 +40,12 @@
 <style scoped>
 .container {
   background-image: url("../assets/profil.jpg");
-  height: 80vh;
+  height: 85vh;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
+  color: whitesmoke;
 }
 
 h1 {
@@ -34,11 +56,11 @@ h1 {
   margin-left: 50px;
 }
 p {
+  font-family: "Roboto", sans-serif;
   font-size: 4.5vh;
   color: rgb(187, 187, 187);
   margin-left: 5%;
   margin-right: 5%;
-  text-align: justify;
 }
 .card {
   margin-top: 2%;
@@ -49,5 +71,17 @@ p {
   background-color: rgba(17, 25, 40, 0.56);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.social {
+  display: flex;
+  justify-content: space-around;
+}
+.socialItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+a {
+  color: whitesmoke;
 }
 </style>

@@ -1,6 +1,5 @@
 <template>
   <fa :icon="name" class="icon" size="6x" />
-  <p>{{ name }}</p>
 </template>
 
 <script setup>
@@ -16,7 +15,6 @@ defineProps({
 
 <style>
 .icon {
-  margin-top: 10%;
-  height: 80px;
+  height: 70px;
 }
 </style>
