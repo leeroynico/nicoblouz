@@ -20,25 +20,31 @@ import Competence from "./Competence.vue";
 const competences = [
   {
     id: 1,
-    name: " react",
-    img: "../../assets/react.png",
+    name: "react",
+    img: "react.png",
     stars: 5,
     halfStars: false,
   },
   {
     id: 1,
-    name: " react",
-    img: "../../assets/react.png",
+    name: "vue",
+    img: "vue.png",
     stars: 4,
     halfStars: false,
     bannier: "NOUVEAUTE",
   },
   {
     id: 2,
-    name: " vue",
-    img: "../../assets/react.png",
-    stars: 2,
+    name: "symfony",
+    img: "symfony.png",
+    stars: 3,
     halfStars: true,
+  },
+  {
+    id: 2,
+    name: "api platform",
+    img: "apiPlatform.png",
+    stars: 4,
   },
 ];
 </script>
@@ -63,5 +69,6 @@ h3 {
   margin-top: 30px;
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
 }
 </style>

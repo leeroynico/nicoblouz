@@ -1,6 +1,8 @@
 # nicoblouz
 
-this app is a training app helping me to learn how use Vue.js
+this app is a training app helping me to learn Vue.js
+
+watach deployment here : https://nicoblouz-leeroynico.vercel.app/
 
 ## Project setup
 

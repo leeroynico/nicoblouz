@@ -1,7 +1,8 @@
 <template>
   <div class="card">
-    <img src="../../assets/react.png" alt="react" />
+    <img :src="require(`@/assets/${img}`)" alt="react" />
     <div class="banniere">{{ bannier }}</div>
+    <h4>{{ name }}</h4>
     <div class="stars">
       <div v-for="index in stars" :key="index">
         <fa :icon="['fa', 'star']" size="1x" />
@@ -24,6 +25,7 @@
 
 img {
   width: 60%;
+  max-height: 150px;
 }
 .banniere {
   margin-top: 15px;
@@ -46,6 +48,12 @@ p {
   margin-top: 8px;
   display: flex;
 }
+
+h4 {
+  margin: 0;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
 </style>
 
 <script setup>
@@ -59,7 +67,7 @@ defineProps({
   },
   img: {
     type: String,
-    default: "../../assets/react.png",
+    default: "react.png",
   },
   stars: {
     type: Number,
