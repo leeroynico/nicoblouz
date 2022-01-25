@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <img src="../../assets/nicoblouzlogo.png" alt="logo" />
+    <a href=""> <img src="../../assets/nicoblouzlogo.png" alt="logo" /></a>
     <p>ma candidature chez Motoblouz</p>
     <Icons name="motorcycle" />
   </div>
