@@ -5,9 +5,9 @@
       <h1>Mon profil</h1>
       <p>
         Je suis un développeur Front-End, ayant beaucoup d'appétence pour le
-        Javascript (notamment React). Ayant vu votre annonce et vu Vue.js, j'ai
-        donc réalisé ce mini projet en Vue.js afin de vous montrer mon envie et
-        mon désir de monter en compétence sur cette technologie.
+        Javascript (notamment React). En apercevant votre annonce et vu Vue.js,
+        j'ai décider de réaliser ce projet en Vue.js afin de vous montrer mon
+        envie et mon désir de monter en compétence sur cette technologie.
       </p>
 
       <h1>Mes réseaux sociaux</h1>

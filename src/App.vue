@@ -3,7 +3,9 @@
     <Header />
     <Profil />
     <Competence />
-    <Contact />
+    <div class="contact">
+      <Contact />
+    </div>
   </div>
 </template>
 
@@ -29,5 +31,9 @@ export default {
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.contact {
+  margin-top: 60px;
 }
 </style>

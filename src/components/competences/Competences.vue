@@ -29,7 +29,7 @@ const competences = [
     id: 1,
     name: "vue",
     img: "vue.png",
-    stars: 4,
+    stars: 3,
     halfStars: false,
     bannier: "NOUVEAUTE",
   },
@@ -37,7 +37,7 @@ const competences = [
     id: 2,
     name: "symfony",
     img: "symfony.png",
-    stars: 3,
+    stars: 2,
     halfStars: true,
   },
   {
@@ -50,20 +50,22 @@ const competences = [
 </script>
 
 <style scoped>
-h2 {
+h2,
+h3 {
   font-family: "Lato", sans-serif;
+  text-align: center;
+}
+
+h2 {
   font-size: 3rem;
   margin-top: 5px;
   margin-bottom: 5px;
-  text-align: center;
 }
 h3 {
-  font-family: "Lato", sans-serif;
   font-size: 1.2rem;
   margin-top: 1px;
   color: grey;
   text-transform: uppercase;
-  text-align: center;
 }
 .competence {
   margin-top: 30px;
