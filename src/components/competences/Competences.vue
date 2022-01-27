@@ -1,21 +1,24 @@
 <template>
   <h2>Ma selection de compétences</h2>
   <h3>Le meilleur de mes compétences</h3>
-  <div class="competence">
-    <div v-for="item in competences" :key="item.id">
-      <Competence
-        :name="item.name"
-        :img="item.img"
-        :stars="item.stars"
-        :halfStars="item.halfStars"
-        :bannier="item.bannier"
-      />
-    </div>
+  <div>
+    <el-row :gutter="10" justify="center">
+      <div v-for="item in competences" :key="item.id">
+        <el-col :xs="8" :sm="6" :md="4" :lg="3" :xl="2" class="competence">
+          <Competence
+            :name="item.name"
+            :img="item.img"
+            :stars="item.stars"
+            :halfStars="item.halfStars"
+            :bannier="item.bannier"
+        /></el-col></div
+    ></el-row>
   </div>
 </template>
 
 <script setup>
 import Competence from "./Competence.vue";
+import { ElRow, ElCol } from "element-plus";
 
 const competences = [
   {
@@ -66,11 +69,9 @@ h3 {
   margin-top: 1px;
   color: grey;
   text-transform: uppercase;
+  margin-bottom: 2%;
 }
 .competence {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  margin-bottom: 40px;
 }
 </style>

@@ -3,7 +3,6 @@
     <!-- <img src="../assets/profil.jpg" alt="profil" /> -->
     <div class="card">
       <h1>Mon profil</h1>
-
       <p>
         Je suis un développeur Front-End, ayant beaucoup d'appétence pour le
         Javascript (notamment React). En apercevant votre annonce et vu Vue.js,
@@ -12,7 +11,6 @@
         >) afin de vous montrer mon envie de monter en compétence sur cette
         technologie.
       </p>
-
       <h1>Mes réseaux sociaux</h1>
       <div class="social">
         <div class="socialItem">
@@ -56,18 +54,17 @@ h1 {
   font-size: 4rem;
   color: whitesmoke;
   margin: 0;
-  margin-left: 50px;
 }
 p {
   font-family: "Roboto", sans-serif;
   font-size: 4.5vh;
   color: rgb(187, 187, 187);
-  margin-left: 5%;
-  margin-right: 5%;
 }
 .card {
   margin-top: 2%;
   margin-bottom: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
   width: 70%;
   backdrop-filter: blur(2px) saturate(78%);
   -webkit-backdrop-filter: blur(2px) saturate(78%);
@@ -86,5 +83,23 @@ p {
 }
 a {
   color: whitesmoke;
+}
+
+@media (max-width: 850px) {
+  h1 {
+    font-size: 2.3rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  .social > a {
+    font-size: 0.7rem;
+  }
+  label {
+    font-size: 0.8rem;
+  }
+  .social {
+    margin-top: 5%;
+  }
 }
 </style>

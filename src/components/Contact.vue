@@ -1,8 +1,8 @@
 <template>
   <h2>Mes infos</h2>
   <h3>et ma localisation</h3>
-  <div class="container">
-    <div class="left">
+  <el-row :gutter="20" justify="space-around">
+    <el-col :md="22" :lg="15">
       <p>
         Les deux points représentent pour l'un l'endroit où je vis et l'autre
         l'adresse de votre Paddock. Je pourrai ainsi venir en moto sans
@@ -15,12 +15,12 @@
         class="map"
       >
         <Marker :options="{ position: center, label: labelHome }" />
-        <Marker :options="{ position: office, label: labelOffice }" />
-      </GoogleMap>
-    </div>
-
-    <div class="right">
-      <el-card shadow="always">
+        <Marker
+          :options="{ position: office, label: labelOffice }"
+        /> </GoogleMap
+    ></el-col>
+    <el-col :xs="16" :sm="12" :md="10" :lg="7">
+      <el-card shadow="always" class="card">
         <el-avatar
           src="https://res.cloudinary.com/leeroynico/image/upload/c_scale,w_327/v1643300610/samples/business_xpsbkd.png"
           class="avatar"
@@ -37,22 +37,22 @@
           <span></span>
           <p>06 17 52 84 97</p>
         </div>
-        <el-button type="info" plain class="bouton" size="large" round
+        <el-button type="info" plain class="button" size="large" round
           >MON CV
         </el-button>
       </el-card>
-    </div>
-  </div>
+    </el-col>
+  </el-row>
 </template>
 
 <script>
 /* eslint-disable no-undef*/
 import { defineComponent } from "vue";
 import { GoogleMap, Marker } from "vue3-google-map";
-import { ElCard, ElAvatar, ElButton } from "element-plus";
+import { ElCard, ElAvatar, ElButton, ElRow, ElCol } from "element-plus";
 
 export default defineComponent({
-  components: { GoogleMap, Marker, ElCard, ElAvatar, ElButton },
+  components: { GoogleMap, Marker, ElCard, ElAvatar, ElButton, ElRow, ElCol },
   setup() {
     const labelHome = {
       text: "home",
@@ -76,14 +76,6 @@ export default defineComponent({
 });
 </script>
 <style scoped>
-.container {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 50px;
-  margin-bottom: 50px;
-}
-
 p {
   font-family: "Roboto", sans-serif;
   font-size: 3vh;
@@ -109,14 +101,11 @@ h3 {
   margin-top: 1px;
   color: grey;
   text-transform: uppercase;
+  margin-bottom: 2%;
 }
-.card {
-  padding-left: 2%;
-  padding-right: 2%;
-  background-color: rgb(74, 73, 73);
-  border-radius: 12px;
-  border: 4px solid rgb(1, 53, 99);
-  color: whitesmoke;
+.button {
+  margin-top: 3%;
+  color: rgb(0, 0, 0);
 }
 .inline {
   display: flex;
@@ -127,8 +116,17 @@ h3 {
   font-size: 1.1rem;
   margin-left: 5%;
 }
-
-.left {
-  max-width: 800px;
+@media (max-width: 850px) {
+  p {
+    font-size: 1.2rem;
+    margin: 5px;
+    margin-bottom: 20px;
+  }
+  .card {
+    margin-top: 5%;
+  }
+  .avatar {
+    width: 98%;
+  }
 }
 </style>

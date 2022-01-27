@@ -1,12 +1,13 @@
 <template>
   <div class="header">
     <a href=""> <img src="../../assets/nicoblouzlogo.png" alt="logo" /></a>
-    <p>ma candidature chez Motoblouz</p>
+    <p class="hidden-sm-and-down">Ma candidature chez Motoblouz</p>
     <Icons name="motorcycle" @click="open1" class="icon" />
   </div>
 </template>
 
 <script setup>
+import "element-plus/theme-chalk/display.css";
 import Icons from "../icons/IconBase.vue";
 import { ElNotification } from "element-plus";
 
@@ -36,14 +37,16 @@ p {
   font-size: 5vh;
   font-style: italic;
   color: rgb(187, 187, 187);
+  margin-top: 1.5%;
 }
-
 img {
   height: 100px;
 }
+.icon {
+  margin-top: 1%;
+}
+
 .icon:hover {
   cursor: pointer;
-}
-.icon {
 }
 </style>
