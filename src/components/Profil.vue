@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-    <!-- <img src="../assets/profil.jpg" alt="profil" /> -->
     <div class="card">
       <h1>Mon profil</h1>
       <p>
@@ -16,19 +15,19 @@
         <div class="socialItem">
           <label>linkedin</label>
           <a href="https://www.linkedin.com/in/nico-leeroy/" target="blank">
-            <fa :icon="['fab', 'linkedin']" size="6x"
+            <fa :icon="['fab', 'linkedin']" class="icon"
           /></a>
         </div>
         <div class="socialItem">
           <label>github</label>
           <a href="https://github.com/leeroynico/" target="blank">
-            <fa :icon="['fab', 'github']" size="6x"
+            <fa :icon="['fab', 'github']" class="icon"
           /></a>
         </div>
         <div class="socialItem">
           <label>portfolio react</label>
           <a href="https://portfolionicoleroy.netlify.app" target="blank">
-            <fa :icon="['fa', 'address-card']" size="6x" />
+            <fa :icon="['fa', 'address-card']" class="icon" />
           </a>
         </div>
       </div>
@@ -73,6 +72,7 @@ p {
   border: 1px solid rgba(255, 255, 255, 0.125);
 }
 .social {
+  margin-top: 2%;
   display: flex;
   justify-content: space-around;
 }
@@ -84,22 +84,31 @@ p {
 a {
   color: whitesmoke;
 }
+.icon {
+  font-size: 20rem;
+}
 
 @media (max-width: 850px) {
   h1 {
-    font-size: 2.3rem;
+    font-size: 1.8rem;
   }
   p {
     font-size: 1.5rem;
   }
-  .social > a {
-    font-size: 0.7rem;
+  .icon {
+    font-size: 3rem;
   }
   label {
     font-size: 0.8rem;
   }
   .social {
     margin-top: 5%;
+  }
+  .card {
+    width: 90%;
+  }
+  .social {
+    margin-bottom: 0;
   }
 }
 </style>

@@ -19,7 +19,7 @@
           :options="{ position: office, label: labelOffice }"
         /> </GoogleMap
     ></el-col>
-    <el-col :xs="16" :sm="12" :md="10" :lg="7">
+    <el-col :xs="20" :sm="12" :md="10" :lg="7">
       <el-card shadow="always" class="card">
         <el-avatar
           src="https://res.cloudinary.com/leeroynico/image/upload/c_scale,w_327/v1643300610/samples/business_xpsbkd.png"
@@ -110,7 +110,7 @@ h3 {
 .inline {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
 }
 .inline > p {
   font-size: 1.1rem;
