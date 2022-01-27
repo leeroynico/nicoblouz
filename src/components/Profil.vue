@@ -9,7 +9,7 @@
         j'ai décider de réaliser ce projet en Vue.js afin de vous montrer mon
         envie et mon désir de monter en compétence sur cette technologie.
       </p>
-
+      <el-button type="primary">Primary</el-button>
       <h1>Mes réseaux sociaux</h1>
       <div class="social">
         <div class="socialItem">
@@ -35,7 +35,12 @@
   </div>
 </template>
 
-<script></script>
+<script>
+import { ElButton } from "element-plus";
+export default {
+  components: { ElButton },
+};
+</script>
 
 <style scoped>
 .container {
