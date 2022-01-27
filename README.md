@@ -2,7 +2,7 @@
 
 this app is a training app helping me to learn Vue.js
 
-watach deployment here : https://nicoblouz-leeroynico.vercel.app/
+check deployment here : https://nicoblouz-leeroynico.vercel.app/
 
 ## Project setup
 

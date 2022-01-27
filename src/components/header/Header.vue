@@ -2,16 +2,21 @@
   <div class="header">
     <a href=""> <img src="../../assets/nicoblouzlogo.png" alt="logo" /></a>
     <p>ma candidature chez Motoblouz</p>
-    <Icons name="motorcycle" />
+    <Icons name="motorcycle" @click="open1" class="icon" />
   </div>
 </template>
 
-<script>
+<script setup>
 import Icons from "../icons/IconBase.vue";
-export default {
-  components: {
-    Icons,
-  },
+import { ElNotification } from "element-plus";
+
+const open1 = () => {
+  ElNotification({
+    title: "Mon profil de motard : ",
+    message:
+      "Bon en fait, je fais essentiellement du vélo... ça y ressemble non ?  ",
+    offset: 100,
+  });
 };
 </script>
 
@@ -35,5 +40,10 @@ p {
 
 img {
   height: 100px;
+}
+.icon:hover {
+  cursor: pointer;
+}
+.icon {
 }
 </style>

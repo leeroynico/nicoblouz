@@ -3,13 +3,16 @@
     <!-- <img src="../assets/profil.jpg" alt="profil" /> -->
     <div class="card">
       <h1>Mon profil</h1>
+
       <p>
         Je suis un développeur Front-End, ayant beaucoup d'appétence pour le
         Javascript (notamment React). En apercevant votre annonce et vu Vue.js,
-        j'ai décider de réaliser ce projet en Vue.js afin de vous montrer mon
-        envie et mon désir de monter en compétence sur cette technologie.
+        j'ai décider de réaliser ce projet en Vue.js (le code source est
+        <a href="https://github.com/leeroynico/nicoblouz" target="blank"> ici</a
+        >) afin de vous montrer mon envie de monter en compétence sur cette
+        technologie.
       </p>
-      <el-button type="primary">Primary</el-button>
+
       <h1>Mes réseaux sociaux</h1>
       <div class="social">
         <div class="socialItem">
@@ -35,12 +38,7 @@
   </div>
 </template>
 
-<script>
-import { ElButton } from "element-plus";
-export default {
-  components: { ElButton },
-};
-</script>
+<script></script>
 
 <style scoped>
 .container {
