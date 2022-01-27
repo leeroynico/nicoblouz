@@ -82,7 +82,7 @@ p {
   align-items: center;
 }
 a {
-  color: whitesmoke;
+  color: rgb(201, 199, 199);
 }
 .icon {
   font-size: 20rem;
@@ -90,10 +90,11 @@ a {
 
 @media (max-width: 850px) {
   h1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    color: rgb(186, 185, 185);
   }
   .icon {
     font-size: 3rem;
