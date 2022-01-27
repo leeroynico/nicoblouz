@@ -37,7 +37,13 @@
           <span></span>
           <p>06 17 52 84 97</p>
         </div>
-        <el-button type="info" plain class="button" size="large" round
+        <el-button
+          type="info"
+          plain
+          class="button"
+          size="large"
+          round
+          @click="handleClick"
           >MON CV
         </el-button>
       </el-card>
@@ -50,6 +56,12 @@
 import { defineComponent } from "vue";
 import { GoogleMap, Marker } from "vue3-google-map";
 import { ElCard, ElAvatar, ElButton, ElRow, ElCol } from "element-plus";
+import cv from "../assets/CV_NicolasLeroy.png";
+
+const handleClick = () => {
+  window.open(cv, "_blank");
+  console.log("");
+};
 
 export default defineComponent({
   components: { GoogleMap, Marker, ElCard, ElAvatar, ElButton, ElRow, ElCol },
@@ -71,7 +83,7 @@ export default defineComponent({
       lng: 2.951438,
     };
 
-    return { center, office, labelHome, labelOffice };
+    return { center, office, labelHome, labelOffice, handleClick };
   },
 });
 </script>

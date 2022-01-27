@@ -39,7 +39,7 @@
 
 <style scoped>
 .container {
-  background-image: url("../assets/profil.jpg");
+  background-image: url("https://res.cloudinary.com/leeroynico/image/upload/c_scale,w_1452/v1643315479/samples/profil_xhx7ws.jpg");
   height: 85vh;
   background-repeat: no-repeat;
   background-size: cover;
