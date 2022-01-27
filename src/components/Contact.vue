@@ -99,9 +99,10 @@ h3 {
 .card {
   padding-left: 2%;
   padding-right: 2%;
-  background-color: rgba(0, 82, 235, 0.56);
+  background-color: rgb(74, 73, 73);
   border-radius: 12px;
   border: 4px solid rgb(1, 53, 99);
+  color: whitesmoke;
 }
 
 /* .right {
